@@ -27,10 +27,10 @@ let friendsPets = 2;
 // 11 - Add two pets to your `pets` variable
 pets += 2;
 // 12 - Create a constant variable called `allowedPets` and set it to a number value of your choice
-let allowedPets = 5;
+const allowedPets = 5;
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!", 
 // if it's not true, console log "How about we stay home?"
-if (adventurous == 'true'){
+if (adventurous == true){
     console.log('Adventures are great!');
 }
 else {
@@ -51,10 +51,10 @@ else {
 // console logs "I have enough pets" if the value of `pets` is equal to the value of `allowedPets`,
 // and console logs "Oh no, I have too many pets!"
 // if the value of `pets` is greater than the value of `allowedPets`.
-if (pets <= allowedPets){
+if (pets < allowedPets){
     console.log('I can have more pets!');
 }
-else if (pets == allowedPets){
+else if (pets === allowedPets){
     console.log('I have enough pets');
 }
 else if (pets > allowedPets){
@@ -95,7 +95,9 @@ switch (number) {
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
-function ruAdventurous(yes){
-    yes ? console.log('Adventures are great!') : console.log('How about we stay home?');
-}
-ruAdventurous(true);
+//function ruAdventurous(yes){
+//    yes ? console.log('Adventures are great!') : console.log('How about we stay home?');
+//}
+//ruAdventurous(true);
+
+console.log((adventurous) ? "Adventures are great!" : "How about we stay home?");
